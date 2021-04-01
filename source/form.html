@@ -40,72 +40,71 @@
       <form action="">
         <div class="form__wrap">
           <ul class="form__list">
-            <li class="form__input">
-              <label for="name">ИМЯ:*</label>
-              <input type="text" placeholder="барсик" id="name" name="name">
+            <li class="form-input">
+              <label for="name" class="form-input__label">ИМЯ:*</label>
+              <input type="text" placeholder="барсик" id="name" name="name" class="form-input__field">
             </li>
-            <li class="form__input">
-              <label for="weight">Вес (кг):*</label>
-              <input type="number" placeholder="7" id="weight" name="weight">
+            <li class="form-input">
+              <label for="weight" class="form-input__label">Вес (кг):*</label>
+              <input type="number" placeholder="7" id="weight" name="weight" class="form-input__field">
             </li>
-            <li class="form__input">
-              <label for="age">Вес (кг):*</label>
-              <input type="number" placeholder="7" id="age" name="age">
+            <li class="form-input">
+              <label for="age" class="form-input__label">Вес (кг):*</label>
+              <input type="number" placeholder="7" id="age" name="age" class="form-input__field">
             </li>
           </ul>
           <ul class="form__list">
-            <li class="form__radio">
-              <input type="radio" name="target" id="num_1">
-              <label for="num_1">похудение</label>
+            <li class="form-radio">
+              <input type="radio" name="target" id="num_1" class="form-radio__input">
+              <label for="num_1" class="form-radio__label">похудение</label>
             </li>
-            <li class="form__radio">
-              <input type="radio" name="target" id="num_2">
-              <label for="num_2">Набор массы</label>
+            <li class="form-radio">
+              <input type="radio" name="target" id="num_2" class="form-radio__input">
+              <label for="num_2" class="form-radio__label">Набор массы</label>
             </li>
-            <li class="form__radio">
-              <input type="radio" name="target" id="num_3">
-              <label for="num_3">Не знаю (Нужен ваш совет)</label>
+            <li class="form-radio">
+              <input type="radio" name="target" id="num_3"  class="form-radio__input">
+              <label for="num_3" class="form-radio__label">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </div>
         <fieldset class="form__group form__group--contacts">
           <legend class="form__title">Контактные данные(владельца кота)</legend>
           <ul class="form__list">
-            <li class="form__input">
-              <label for="mail">E-mail:*</label>
-              <input type="email" placeholder="kuklachev@gmail.com" id="mail" name="mail">
+            <li class="form-input">
+              <label for="mail" class="form-input__label">E-mail:*</label>
+              <input type="email" placeholder="kuklachev@gmail.com" id="mail" name="mail" class="form-input__field">
             </li>
-            <li class="form__input">
-              <label for="phone">Телефон:*</label>
-              <input type="tel" placeholder="8 (960) 900-60-90" id="phone" name="phone">
+            <li class="form-input">
+              <label for="phone" class="form-input__label">Телефон:*</label>
+              <input type="tel" placeholder="8 (960) 900-60-90" id="phone" name="phone" class="form-input__field">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group form__group--contacts">
+        <fieldset class="form__group form__group--message">
           <legend class="form__title">Комментарий</legend>
-          <div class="form__textarea">
-            <label for="text">E-mail:*</label>
-            <textarea name="text" id="text" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <div class="form-textarea">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота" class="form-textarea__field"></textarea>
           </div>
         </fieldset>
-        <fieldset class="form__group form__group--contacts">
+        <fieldset class="form__group form__group--more">
           <legend class="form__title">Дополнительно</legend>
           <ul class="form__list">
-            <li class="form__checkbox">
-              <input type="checkbox" id="ch-1" name="ch-1">
-              <label for="ch-1">сахарозаменитель</label>
+            <li class="form-checkbox">
+              <input type="checkbox" id="ch-1" name="ch-1" class="form-checkbox__input">
+              <label for="ch-1" class="form-checkbox__label">сахарозаменитель</label>
             </li>
-            <li class="form__checkbox">
-              <input type="checkbox" id="ch-2" name="ch-2">
-              <label for="ch-2">питьевая вода</label>
+            <li class="form-checkbox">
+              <input type="checkbox" id="ch-2" name="ch-2" class="form-checkbox__input">
+              <label for="ch-2" class="form-checkbox__label">питьевая вода</label>
             </li>
-            <li class="form__checkbox">
-              <input type="checkbox" id="ch-3" name="ch-3">
-              <label for="ch-3">молоко</label>
+            <li class="form-checkbox">
+              <input type="checkbox" id="ch-3" name="ch-3" class="form-checkbox__input">
+              <label for="ch-3" class="form-checkbox__label">молоко</label>
             </li>
-            <li class="form__checkbox">
-              <input type="checkbox" id="ch-4" name="ch-4">
-              <label for="ch-4">витамины</label>
+            <li class="form-checkbox">
+              <input type="checkbox" id="ch-4" name="ch-4" class="form-checkbox__input">
+              <label for="ch-4" class="form-checkbox__label">витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -129,7 +128,7 @@
       <a href="/" class="page-footer__logo">
         <img src="img/logo-text.svg" width="128" height="24" alt="CAT ENERGY">
       </a>
-      <ul class="social__list">
+      <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
         </li>

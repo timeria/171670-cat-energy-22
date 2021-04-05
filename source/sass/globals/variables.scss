@@ -1,0 +1,27 @@
+// Colors
+
+$black: #000000;
+$white: #ffffff;
+$green: #68B738;
+$lightgreen:  rgba(104, 183, 56, 0.85);
+$darkgrey: #DCDCDC;
+$lightgrey: #F2F2F2;
+$grey: #EAEAEA;
+$greyline: #D9D9D9;
+$bordercolor: #E7E7E7;
+$lightblack: #444444;
+$bordererror: #FF8282;
+$greydisabled: #222222;
+$blacktitle: #111111;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width: 767px;
+
+@mixin beforeAfter {
+    content: "";
+    display: block;
+    position: absolute;
+}

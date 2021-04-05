@@ -1,0 +1,40 @@
+.main-catalog__item {
+  background: $lightgrey;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.main-catalog__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: $green;
+  position: relative;
+}
+.main-catalog__img img {
+  position: absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: initial;
+}
+.main-catalog__link {
+  font-size: 16px;
+  color: $black;
+}
+.main-catalog__arrow {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+.main-catalog__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+}
+.main-catalog__description {
+  color: $lightblack;
+  margin: 25px 0 20px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $greyline;
+}

@@ -1,0 +1,20 @@
+.advantages__item__img {
+  width: 60px;
+  height: 60px;
+}
+.advantages__item__img--sheet{
+  background: $green url('../img/sheet.svg') no-repeat center center;
+}
+.advantages__item__img--boil{
+  background: $green url('../img/boil.svg') no-repeat center center;
+}
+.advantages__item__img--food{
+  background: $green url('../img/food.svg') no-repeat center center;
+}
+.advantages__item__img--clock{
+  background: $green url('../img/clock.svg') no-repeat center center;
+}
+.advantages__item__description {
+  color: $lightblack;
+  margin: 0;
+}

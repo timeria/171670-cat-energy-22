@@ -1,8 +1,5 @@
 .page {
   height: 100%;
-  font-size: 14px;
-  font-family: 'Oswald', sans-serif;
-  line-height: 18px;
 }
 
 .page__body {
@@ -10,4 +7,13 @@
   margin: 0;
   background-color: $white;
   color: $black;
+  font-family: 'Oswald', sans-serif;
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

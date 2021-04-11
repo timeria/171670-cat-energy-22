@@ -16,6 +16,7 @@
 .form-input__label{
   margin-right: 12px;
   color: $greydisabled;
+  white-space: nowrap;
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 18px;
@@ -47,21 +48,24 @@
   }
 }
 .form-input__field {
-  border: 1px solid #E7E7E7;
+  border: 1px solid $bordercolor;
   text-transform: uppercase;
   @media (max-width: $mobile-width) {
     height: 45px;
-    padding: 0 15px;
+    padding-left: 15px;
     font-size: 16px;
   }
   @media (min-width: $tablet-width) {
     height: 52px;
-    padding: 0 20px;
+    padding-left: 29px;
     font-size: 20px;
   }
 }
-@media (max-width: $mobile-width) {
-  .form-input {
+.form-input {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  @media (max-width: $mobile-width) {
     margin-bottom: 14px;
   }
 }
@@ -102,11 +106,8 @@
 }
 @media (min-width: $tablet-width) {
   .form__list--target {
-    border: 1px solid #E7E7E7;
+    border: 1px solid $bordercolor;
   }
-}
-.form-radio__input {
-  opacity: 0;
 }
 .form-radio__label::before {
   @include beforeAfter;

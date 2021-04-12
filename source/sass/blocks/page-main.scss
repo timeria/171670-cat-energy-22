@@ -3,14 +3,12 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 37px;
-    padding: 0 20px;
   }
 }
 @media (min-width: $tablet-width) {
   .page-main__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 55px;
-    padding: 0 70px;
+    margin-bottom: 55px;
   }
 }

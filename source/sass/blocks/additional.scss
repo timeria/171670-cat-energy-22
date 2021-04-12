@@ -1,0 +1,21 @@
+.additional {
+  margin-top: 25px;
+  padding: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: $green;
+}
+.additional__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.additional__title {
+  margin-bottom: 35px;
+}
+.additional__gift {
+  @media (max-width: $mobile-width) {
+    height: 289px;
+  }
+}

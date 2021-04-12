@@ -1,0 +1,105 @@
+.product__link {
+  color: $greydisabled;
+  @media (max-width: $mobile-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 25px;
+  }
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: $mobile-width) {
+  .product:nth-child(odd) img {
+    max-height: 96px;
+  }
+  .product:nth-child(even) img {
+    max-height: 110px;
+  }
+  .product__img {
+    padding-top: 10px;
+    width: auto;
+  }
+  .product:first-child{
+    padding-top: 20px;
+    border-top: 1px solid #EBEBEB;
+  }
+}
+@media (min-width: $tablet-width) {
+  .product:nth-child(odd) img {
+    position: relative;
+    top: -45px;
+  }
+  .product:nth-child(even) img {
+    position: relative;
+    top: -73px;
+  }
+}
+.product__img {
+  display: block;
+  margin: 0 auto;
+}
+.product__title {
+  margin-top: 0;
+  text-transform: uppercase;
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    max-width: 73%;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -15px;
+  }
+}
+.product {
+  @media (max-width: $mobile-width) {
+    padding: 0 20px 25px;
+    border-bottom:1px solid $catborder;
+    margin-bottom: 30px;
+  }
+  @media (min-width: $tablet-width) {
+    background: $lightgrey;
+    padding: 0 40px 40px;
+    margin-bottom: 140px;
+  }
+}
+.product__button {
+  width: 100%;
+}
+.product_small {
+  padding-left: 0;
+  padding-right: 0;
+}
+.product_small .product__name {
+  text-transform: uppercase;
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 0 13px;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+.product__description {
+  display: flex;
+  justify-content: space-between;
+}
+.product__description p {
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 0 15px;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+}

@@ -1,10 +1,8 @@
 .additional {
   margin-top: 25px;
   padding: 0;
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0;
-  border-color: $green;
+  border: initial;
+  border-top: 2px solid $green;
 }
 .additional__list {
   margin: 0;

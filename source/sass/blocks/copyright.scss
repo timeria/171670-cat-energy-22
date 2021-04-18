@@ -1,3 +1,16 @@
 .copyright__link {
   color: $lightblack;
+  display: flex;
+  align-items: center;
+  @media (max-width: $mobile-width) {
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+}
+.copyright__text {
+  font-size: 16px;
+  line-height: 18px;
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
 }

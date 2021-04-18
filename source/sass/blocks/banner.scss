@@ -3,6 +3,13 @@
   color: $white;
   padding: 27px 35px 22px 35px;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    color: $black;
+    text-align: left;
+  }
+  @media (min-width: $desktop-width) {
+    padding:  0 110px 200px 190px;
+  }
 }
 .banner::before {
   @include beforeAfter;
@@ -28,10 +35,55 @@
   margin: 0 0 25px;
   font-size: 36px;
   line-height: 36px;
+  position: relative;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
 }
 .banner__description {
   margin: 0 0 30px;
+  position: relative;
+  text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 .banner__button {
-  padding: 7px 0;
+  padding: 7px 64px;
+}
+.banner__text img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  @media (min-width: $desktop-width) {
+    position:absolute;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: $tablet-width) {
+  .banner::before,
+  .banner::after {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width) {
+  .banner::before,
+  .banner::after {
+    right: 0;
+    left: auto;
+    display: block;
+  }
+  .banner::before {
+    width: 720px;
+    height: 694px;
+    top:-221px;
+    z-index: -1;
+  }
+  .banner::after {
+    display: none;
+  }
 }

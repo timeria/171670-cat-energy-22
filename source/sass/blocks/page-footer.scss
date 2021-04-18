@@ -4,11 +4,24 @@
 }
 .page-footer__bottom {
   background: $lightgrey;
-  padding-top: 40px;
-  padding-bottom: 22px;
+  @media (max-width: $mobile-width) {
+    padding-top: 40px;
+  }
+  @media (min-width: $tablet-width) {
+    padding: 55px 0 61px;
+  }
 }
 .page-footer__logo {
   display: block;
-  text-align: center;
-  padding-bottom: 32px;
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .page-footer__bottom-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

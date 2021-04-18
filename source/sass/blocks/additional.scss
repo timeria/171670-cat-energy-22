@@ -1,0 +1,19 @@
+.additional {
+  margin-top: 25px;
+  padding: 0;
+  border: initial;
+  border-top: 2px solid $green;
+}
+.additional__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.additional__title {
+  margin-bottom: 35px;
+}
+.additional__gift {
+  @media (max-width: $mobile-width) {
+    height: 289px;
+  }
+}

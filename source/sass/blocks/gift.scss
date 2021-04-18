@@ -1,0 +1,27 @@
+.gift__wrap {
+  height: 100%;
+  width: 100%;
+  background: url('../img/gift-mobile.jpg') no-repeat;
+  background-size: cover;
+  padding: 186px 0 0;
+  text-align: center;
+  position: relative;
+}
+.gift__wrap::before {
+  @include beforeAfter;
+
+}
+.gift__text {
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+}
+.gift__img {
+  position: absolute;
+  width: 80px;
+  height: 84px;
+  background: url('../img/gift.svg') no-repeat;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 55px;
+}

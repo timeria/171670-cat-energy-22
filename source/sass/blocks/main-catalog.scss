@@ -2,13 +2,31 @@
   background: $lightgrey;
   margin-bottom: 20px;
   padding: 20px;
+  position: relative;
+  @media (min-width: $tablet-width) {
+    padding: 77px 262px 57px 52px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+    padding: 0;
+  }
 }
 .main-catalog__img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
   background: $green;
-  position: relative;
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  @media (max-width: $mobile-width) {
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    top: 24px;
+  }
+  @media (min-width: $tablet-width) {
+    left: auto;
+    right: 60px;
+  }
 }
 .main-catalog__img img {
   position: absolute;
@@ -17,24 +35,64 @@
   transform: translate(-50%, -50%);
   max-width: initial;
 }
+.main-catalog__img--slim img {
+   @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 192px;
+    top: 42%;
+   }
+}
+.main-catalog__img--weight img {
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 112px;
+    }
+}
 .main-catalog__link {
-  font-size: 16px;
   color: $black;
+  text-transform: uppercase;
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 .main-catalog__arrow {
   display: inline-block;
   vertical-align: middle;
   margin-left: 15px;
+  margin-bottom: 5px;
 }
 .main-catalog__title {
   margin: 0;
   text-transform: uppercase;
-  font-size: 24px;
-  line-height: 37px;
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 37px;
+    padding-left: 70px;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 .main-catalog__description {
   color: $lightblack;
   margin: 25px 0 20px;
-  padding-bottom: 23px;
-  border-bottom: 1px solid $greyline;
+  @media (max-width: $mobile-width) {
+    padding-bottom: 23px;
+    border-bottom: 1px solid $greyline;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 17px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .main-catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }

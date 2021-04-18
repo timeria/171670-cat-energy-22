@@ -145,18 +145,6 @@
     margin: 25px 0;
   }
 }
-.form__title {
-  @media (max-width: $mobile-width) {
-    font-size: 24px;
-    line-height: 25px;
-    padding: 0 15px 0 20px;
-  }
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-    padding: 0 40px;
-  }
-}
 @media (max-width: $mobile-width) {
   .form__group--contacts .form__title {
     max-width: 217px;

@@ -33,11 +33,14 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 110px;
-  @media (max-width: $desktop-width) {
-    padding: 0 30px;
-  }
   @media (max-width: $mobile-width) {
     padding: 0 20px;
+  }
+  @media (max-width: $tablet-width) {
+    padding: 0 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 
@@ -47,6 +50,8 @@ a {
   text-transform: uppercase;
   background: $green;
   padding: 12px 0 10px;
+  display: inline-block;
+  text-align: center;
   @media (max-width: $mobile-width) {
     font-size: 16px;
     padding: 12px 59px 10px;
@@ -55,10 +60,25 @@ a {
     font-size: 20px;
   }
 }
+.button:hover {
+  background: $greenhover;
+}
+.button:focus {
+  background: $greenhover;
+  color: $whitefocus;
+}
 .title__h2 {
-  font-size: 36px;
-  line-height: 40px;
-  margin-top: 0;
+   margin-top: 0;
+  @media (max-width: $mobile-width) {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 33px;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
 }
 .title {
   @media (max-width: $mobile-width) {

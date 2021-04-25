@@ -1,0 +1,116 @@
+.slider {
+  @media (max-width: $tablet-width) {
+    position: relative;
+  }
+}
+.slider__item{
+  text-align: center;
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+.slider__item.slider__item--active {
+  display: block;
+}
+.slider__button {
+  padding: 0;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: $black;
+  cursor: pointer;
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.24);
+  }
+}
+.slider__toggles {
+  display: flex;
+  align-items: center;
+  @media (max-width: $mobile-width) {
+    width: 228px;
+    margin: 20px auto 0;
+  }
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 70px;
+  }
+  @media (min-width: $desktop-width) {
+    left: 54%;
+    bottom: 22px;
+  }
+}
+.slider__scale {
+  position: relative;
+  border-radius: 6px;
+  @media (max-width: $mobile-width) {
+    width: 84px;
+    height: 14px;
+    border: 1px solid $borderradio;
+    background: $white;
+    margin: 0 21px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background: $borderradio;
+    margin: 0 11px;
+  }
+}
+.slider__toggle {
+  position: absolute;
+  cursor: pointer;
+  @media (max-width: $mobile-width) {
+    background: $green;
+    border-radius: 6px;
+    width: 35px;
+    height: 6px;
+    top: 3px;
+    right: 6px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: $white;
+    border: 1px solid $borderradio;
+    left: 47%;
+    top: -13px;
+  }
+}
+@media (max-width: $mobile-width) {
+  .slider__button--active + .slider__scale .slider__toggle {
+    left: 6px;
+    right: auto;
+  }
+}
+@media (min-width: $tablet-width) {
+  .slider__list {
+    display: flex;
+    justify-content: center;
+  }
+  .slider__toggle::before {
+    content: "";
+    position: absolute;
+    display:block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $green;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .slider__button:focus {
+    border-color: transparent;
+  }
+}

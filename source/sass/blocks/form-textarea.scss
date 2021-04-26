@@ -1,0 +1,26 @@
+.form-textarea {
+  @media (max-width: $mobile-width) {
+    padding: 0 20px;
+  }
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+}
+.form-textarea__field {
+  width: 100%;
+  border: 1px solid $bordercolor;
+  color: $lightblack;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 16px;
+  @media (max-width: $mobile-width) {
+    height: 150px;
+    padding: 10px 12px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  @media (min-width: $tablet-width) {
+    height: 174px;
+    padding: 10px 20px;
+  }
+}

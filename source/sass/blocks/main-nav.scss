@@ -68,4 +68,12 @@
     display: block;
   }
 }
+@media (min-width: $desktop-width) {
+  .main-nav--pages a {
+    color: $blacktitle;
+  }
+  .main-nav--pages .site-list__link--active {
+    border-color: $green;
+  }
+}
 

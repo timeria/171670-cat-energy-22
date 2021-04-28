@@ -2,7 +2,12 @@
   .page-main__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 37px;
+    margin: 27px 0 37px;
+    padding: 0 20px;
+  }
+  .page-main--pages {
+    border: 1px solid $greyline;
+    padding-bottom: 32px;
   }
 }
 @media (min-width: $tablet-width) {
@@ -10,5 +15,17 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 55px;
+    padding: 0 70px;
+  }
+  .page-main__title {
+    margin: 13px 0 54px;
   }
 }
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px 56px;
+  }
+}
+

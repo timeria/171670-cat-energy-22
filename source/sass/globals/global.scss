@@ -52,12 +52,15 @@ a {
   padding: 12px 0 10px;
   display: inline-block;
   text-align: center;
+  font-family: 'Oswald', sans-serif;
   @media (max-width: $mobile-width) {
     font-size: 16px;
+    line-height: 16px;
     padding: 12px 59px 10px;
   }
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 20px;
     padding: 15px 39px 12px;
   }
 }

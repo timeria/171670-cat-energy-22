@@ -1,9 +1,43 @@
 .catalog {
   padding-bottom: 25px;
   border-bottom: 1px solid $catborder;
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    position: relative;
+    border: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 .catalog__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
+.catalog__more.more{
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 45.5%;
+    height: 430px;
+    border: 2px solid $lightgrey;
+    padding: 52px 37px 38px;
+    right: 30px;
+    bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    right: 110px;
+  }
+}
+

@@ -16,10 +16,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    max-width: 134px;
+    margin: 0 auto;
   }
 }
 .more__text {
   color: $lightblack;
+  font-family: 'Arial';
   @media (max-width: $mobile-width) {
     font-size: 12px;
     line-height: 16px;
@@ -28,6 +31,8 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
+    margin: 23px auto 83px;
+    max-width: 167px;
   }
 }
 .more__img {
@@ -36,9 +41,14 @@
   }
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
+    width: 60px;
+    height: 60px;
   }
 }
 .more__button {
   background: $lightgrey;
   color: $lightblack;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 20px 12px;
 }

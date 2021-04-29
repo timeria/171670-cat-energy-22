@@ -6,7 +6,7 @@
     padding: 0 20px;
   }
   .page-main--pages {
-    border: 1px solid $greyline;
+    border-top: 1px solid $greyline;
     padding-bottom: 32px;
   }
 }
@@ -26,6 +26,9 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 110px 56px;
+  }
+  .page-main--pages {
+    position: relative;
   }
 }
 

@@ -7,6 +7,12 @@
     padding: 30px 0;
   }
 }
+.copyright__link:hover .copyright__img path {
+  fill: $green;
+}
+.copyright__link:focus{
+  opacity: .3;
+}
 .copyright__text {
   font-size: 16px;
   line-height: 18px;

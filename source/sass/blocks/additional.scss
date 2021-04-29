@@ -4,7 +4,7 @@
   border: initial;
   border-top: 2px solid $green;
   @media (min-width: $tablet-width) {
-    margin: 68px 0;
+    margin: 68px 0 76px;
     padding: 0 30px;
   }
   @media (min-width: $desktop-width) {
@@ -17,8 +17,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
   @media (min-width: $desktop-width) {
-    width: calc(100% - 325px);
+    width: calc(100% - 365px);
+    margin-bottom: 0;
   }
 }
 .additional__title {
@@ -33,16 +37,8 @@
   @media (max-width: $mobile-width) {
     height: 286px;
   }
-  @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
-  }
   @media (min-width: $desktop-width) {
-    position: absolute;
-    right: 110px;
-    bottom: 0;
     width: 245px;
-    height: 289px;
-    margin-bottom: 0;
   }
 }
 .additional__wrap.container{
@@ -57,5 +53,11 @@
   @media (min-width: $desktop-width) {
     padding: 0;
   }
+}
+.additional__wrap {
+   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+   }
 }
 

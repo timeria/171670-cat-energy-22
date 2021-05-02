@@ -16,3 +16,12 @@
     padding: 0 30px;
   }
 }
+.social__link:hover .social__img path {
+  fill: $green;
+}
+.social__link:focus .social__img path {
+  fill: $green;
+}
+.social__link:focus {
+  opacity: .3;
+}

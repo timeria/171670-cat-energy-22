@@ -26,6 +26,12 @@
     padding-bottom: 32px;
   }
 }
+.page-footer__logo:hover{
+  opacity: .8;
+}
+.page-footer__logo:focus{
+  opacity: .6;
+}
 @media (min-width: $tablet-width) {
   .page-footer__bottom-wrap {
     display: flex;

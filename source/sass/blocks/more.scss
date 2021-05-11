@@ -52,3 +52,10 @@
   line-height: 16px;
   padding: 12px 20px 12px;
 }
+.more__button:hover {
+  background: $catborder;
+}
+.more__button:focus {
+  background: $catborder;
+  color: $greyfocus;
+}

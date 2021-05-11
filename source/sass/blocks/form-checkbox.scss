@@ -63,3 +63,6 @@
 .form-checkbox__input:checked + .form-checkbox__label::after {
   opacity: 1;
 }
+.form-checkbox__input:disabled + .form-checkbox__label {
+  opacity: .3;
+}

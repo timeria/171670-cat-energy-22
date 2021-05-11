@@ -26,6 +26,12 @@
     font-size: 20px;
   }
 }
+.form-input__field:focus {
+  border-color: $lightblack;
+}
+.form-error .form-input__field {
+  border-color: $bordererror;
+}
 .form-input {
   display: grid;
   grid-template-columns: min-content 1fr;

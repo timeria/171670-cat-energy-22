@@ -58,4 +58,7 @@
 .form-radio__input:checked + .form-radio__label::after {
   opacity: 1;
 }
+.form-radio__input:disabled + .form-radio__label {
+  opacity: .3;
+}
 

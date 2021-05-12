@@ -111,3 +111,6 @@
     background: url('../img/cat-desctop.jpg') no-repeat;
   }
 }
+@media (min-resolution: 2dppx) {
+   background: url('../img/cat-desctop2x.jpg') no-repeat;
+}

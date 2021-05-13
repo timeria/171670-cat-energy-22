@@ -22,6 +22,10 @@
     background: url('../img/gift-mobile.jpg') no-repeat center center;
   }
 }
+@media (min-resolution: 2dppx) {
+   background: url('../img/gift@2x.jpg') no-repeat;
+}
+
 .gift__wrap::before {
   @include beforeAfter;
 

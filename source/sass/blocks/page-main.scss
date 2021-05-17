@@ -14,21 +14,24 @@
   .page-main__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 55px;
-    padding: 0 70px;
+    margin: 0;
+    padding: 0 70px 164px;
   }
-  .page-main__title {
-    margin: 13px 0 54px;
+  .page-main__title--form {
+    padding: 0 70px 54px;
   }
 }
 @media (min-width: $desktop-width) {
   .page-main__title {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 110px 56px;
+    padding: 0 110px 165px;
   }
   .page-main--pages {
     position: relative;
+  }
+   .page-main__title--form {
+    padding: 0 110px 58px;
   }
 }
 

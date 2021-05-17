@@ -38,6 +38,10 @@
     justify-content: space-between;
     align-items: center;
   }
+  .page-footer__logo svg {
+    width: 128px;
+    height: 24px;
+  }
 }
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {

@@ -11,10 +11,14 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+  @media (min-width: $desktop-width) {
+    max-width: 45%;
+  }
 }
 .main-nav__list {
   @media (min-width: $tablet-width) {
    display: flex;
+   flex-wrap: wrap;
  }
 }
 @media (max-width: $mobile-width) {

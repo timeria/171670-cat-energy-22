@@ -1,6 +1,4 @@
 .catalog {
-  padding-bottom: 25px;
-  border-bottom: 1px solid $catborder;
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     position: relative;
@@ -31,9 +29,9 @@
     width: 45.5%;
     height: 430px;
     border: 2px solid $lightgrey;
-    padding: 52px 37px 38px;
+    padding: 48px 37px 38px;
     right: 30px;
-    bottom: 0;
+    bottom: 143px;
   }
   @media (min-width: $desktop-width) {
     width: 245px;

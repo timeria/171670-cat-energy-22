@@ -11,7 +11,7 @@
   border: 1px solid $bordercolor;
   color: $lightblack;
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   @media (max-width: $mobile-width) {
     height: 150px;
@@ -22,5 +22,6 @@
   @media (min-width: $tablet-width) {
     height: 174px;
     padding: 10px 20px;
+    font-size: 20px;
   }
 }

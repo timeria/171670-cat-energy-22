@@ -11,7 +11,7 @@
     padding: 0 30px 529px 30px;
   }
   @media (min-width: $desktop-width) {
-    padding:  0 0 267px 101px;
+    padding:  40px 0 267px 101px;
   }
 }
 .banner::before {
@@ -61,7 +61,7 @@
   min-width: 280px;
   margin-top: 2px;
   @media (min-width: $tablet-width) {
-    padding: 15px 26px;
+    padding: 17px 26px;
     min-width: auto;
     z-index: 2;
     position: relative;
@@ -80,7 +80,7 @@
   }
   @media (min-width: $desktop-width) {
     right: 330px;
-    top: -81px;
+    top: -43px;
     max-width: 552px;
   }
 }
@@ -110,7 +110,10 @@
     z-index: -2;
     background: url('../img/cat-desctop.jpg') no-repeat;
   }
+  .banner__text {
+    max-width: 555px;
+  }
 }
 @media (min-resolution: 2dppx) {
-   background: url('../img/cat-desctop2x.jpg') no-repeat;
+ background: url('../img/cat-desctop2x.jpg') no-repeat;
 }

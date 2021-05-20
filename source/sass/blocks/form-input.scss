@@ -31,6 +31,9 @@
 .form-input__field:focus {
   border-color: $lightblack;
 }
+.form-input__field:focus + .form-input__img {
+  stroke: $green;
+}
 .form-error .form-input__field {
   border-color: $bordererror;
 }
@@ -54,6 +57,7 @@
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  stroke: $greydisabled;
 }
 .form-input__img--phone {
   right: 12px;

@@ -109,12 +109,12 @@
   @media (min-width: $tablet-width) {
     margin-top: 65px;
   }
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-top: 0;
     position: absolute;
     right: 138px;
     top: -33px;
-   }
+  }
 }
 .example__title {
   @media (min-width: $tablet-width) {
@@ -141,7 +141,7 @@
     width: 354px;
     height: 620px;
   }
-   .example__after img {
+  .example__after img {
     width: 354px;
     height: 607px;
   }
@@ -166,4 +166,3 @@
     padding-left: 58px;
   }
 }
-

@@ -1,8 +1,8 @@
 .form-radio{
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 .form-radio:last-child {
-   margin-bottom: 0;
+  margin-bottom: 0;
 }
 .form-radio__label {
   position: relative;
@@ -61,4 +61,3 @@
 .form-radio__input:disabled + .form-radio__label {
   opacity: .3;
 }
-

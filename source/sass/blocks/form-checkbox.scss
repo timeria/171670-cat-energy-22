@@ -1,30 +1,37 @@
 .form-checkbox {
   margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     width: 48%;
   }
+
   @media (min-width: $desktop-width) {
     width: 20%;
   }
 }
+
 .form-checkbox:last-child {
   margin-bottom: 0;
 }
+
 .form-checkbox__label {
   position: relative;
   text-transform: uppercase;
   color: $greydisabled;
+
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 18px;
     padding-left: 45px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-left: 60px;
   }
 }
+
 .form-checkbox__label::before {
   @include beforeAfter;
   display: block;
@@ -32,15 +39,18 @@
   top: -2px;
   left: 0;
   border: 1px solid $borderradio;
+
   @media (max-width: $mobile-width) {
     width: 30px;
     height: 30px;
   }
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
   }
 }
+
 .form-checkbox__label::after {
   @include beforeAfter;
   display: block;
@@ -49,20 +59,24 @@
   left: 0;
   width: 18px;
   height: 14px;
-  background: url('../img/check.svg') no-repeat;
+  background: url("../img/check.svg") no-repeat;
   opacity: 0;
+
   @media (max-width: $mobile-width) {
     top: 6px;
     left: 6px;
   }
+
   @media (min-width: $tablet-width) {
     top: 11px;
     left: 11px;
   }
 }
+
 .form-checkbox__input:checked + .form-checkbox__label::after {
   opacity: 1;
 }
+
 .form-checkbox__input:disabled + .form-checkbox__label {
-  opacity: .3;
+  opacity: 0.3;
 }

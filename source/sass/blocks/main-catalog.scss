@@ -3,26 +3,31 @@
   margin-bottom: 20px;
   padding: 30px 20px 20px;
   position: relative;
+
   @media (min-width: $tablet-width) {
     padding: 77px 262px 57px 52px;
     margin-bottom: 30px;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 570px;
     padding: 77px 50px 60px 50px;
     margin-bottom: 0;
   }
 }
+
 .main-catalog__img {
   background: $green;
   position: absolute;
   border-radius: 50%;
+
   @media (max-width: $mobile-width) {
     width: 50px;
     height: 50px;
     left: 20px;
     top: 24px;
   }
+
   @media (min-width: $tablet-width) {
     left: auto;
     right: 60px;
@@ -30,6 +35,7 @@
     width: 200px;
     height: 200px;
   }
+
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
@@ -37,96 +43,117 @@
     top: 47px;
   }
 }
+
 .main-catalog__img img {
   position: absolute;
-  left:50%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   max-width: initial;
 }
+
 .main-catalog__img--slim img {
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 192px;
     top: 42%;
   }
+
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
   }
 }
+
 .main-catalog__img--weight img {
-    @media (min-width: $tablet-width) {
-      width: 268px;
-      height: 112px;
-    }
-    @media (min-width: $desktop-width) {
-      width: 134px;
-      height: 56px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+  }
 }
+
 .main-catalog__link {
   color: $black;
   text-transform: uppercase;
+
   @media (max-width: $mobile-width) {
     font-size: 16px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
 }
+
 .main-catalog__link:focus {
-  opacity: .6;
+  opacity: 0.6;
 }
+
 .main-catalog__link:focus svg {
-  opacity: .6;
+  opacity: 0.6;
 }
+
 .main-catalog__arrow {
   display: inline-block;
   vertical-align: middle;
   margin-left: 15px;
   margin-bottom: 5px;
 }
+
 .main-catalog__title {
   margin: 0;
   text-transform: uppercase;
+
   @media (max-width: $mobile-width) {
     font-size: 24px;
     line-height: 37px;
     padding-left: 70px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 162px;
   }
 }
+
 .main-catalog__description {
   color: $lightblack;
   margin: 30px 0 20px;
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
+
   @media (max-width: $mobile-width) {
     padding-bottom: 23px;
     border-bottom: 1px solid $greyline;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     padding-right: 17px;
     margin: 28px 0 52px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 73px 0 31px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-catalog__list {
     display: flex;
     justify-content: space-between;
   }
 }
+
 @media (min-width: $tablet-width) {
   .main-catalog__item:last-child {
     margin-bottom: 0;

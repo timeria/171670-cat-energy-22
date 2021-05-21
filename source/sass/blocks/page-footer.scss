@@ -1,65 +1,81 @@
 .page-footer__map {
   height: 362px;
-  background: url('../img/map.jpg') center center;
+  background: url("../img/map.jpg") center center;
   background-size: cover;
+
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+
   @media (min-width: $desktop-width) {
     position: relative;
     z-index: 1;
   }
 }
+
 .page-footer__bottom {
   background: $lightgrey;
+
   @media (max-width: $mobile-width) {
     padding-top: 40px;
   }
+
   @media (min-width: $tablet-width) {
     padding: 59px 0 56px;
   }
 }
+
 .page-footer__logo {
   display: block;
+
   @media (max-width: $mobile-width) {
     text-align: center;
     padding-bottom: 32px;
   }
 }
-.page-footer__logo:hover{
-  opacity: .8;
+
+.page-footer__logo:hover {
+  opacity: 0.8;
 }
-.page-footer__logo:focus{
-  opacity: .6;
+
+.page-footer__logo:focus {
+  opacity: 0.6;
 }
+
 @media (min-width: $tablet-width) {
   .page-footer__bottom-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .page-footer__logo svg {
     width: 128px;
     height: 24px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     position: relative;
   }
+
   .page-footer__container {
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
   }
 }
+
 .page-footer__contacts {
   @media (max-width: $mobile-width) {
     padding: 28px 20px;
   }
+
   @media (min-width: $tablet-width) {
     padding: 66px 75px 50px;
   }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 570px;
@@ -70,6 +86,7 @@
     padding: 66px 90px 50px 75px;
   }
 }
+
 .page-footer__container--pages {
   background: $lightgrey;
 }

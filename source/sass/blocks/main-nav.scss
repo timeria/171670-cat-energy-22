@@ -8,28 +8,34 @@
     text-align: center;
     left: 0;
   }
+
   @media (min-width: $tablet-width) {
     display: block;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 45%;
   }
 }
+
 .main-nav__list {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
 @media (max-width: $mobile-width) {
-  .main-nav.main-nav--active{
+  .main-nav.main-nav--active {
     display: block;
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-nav--pages a {
     color: $blacktitle;
   }
+
   .main-nav--pages .site-list__link--active {
     border-color: $green;
   }

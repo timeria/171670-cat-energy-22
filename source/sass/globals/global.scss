@@ -20,9 +20,12 @@ a {
   text-decoration: none;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 .site-list {
   list-style: none;
   margin: 0;
@@ -33,12 +36,15 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 110px;
+
   @media (max-width: $mobile-width) {
     padding: 0 20px;
   }
+
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0 110px;
   }
@@ -52,44 +58,53 @@ a {
   padding: 12px 0 10px;
   display: inline-block;
   text-align: center;
-  font-family: "Oswald", "Arial",  sans-serif;
+  font-family: "Oswald", sans-serif;
+
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 16px;
     padding: 12px 59px 10px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     padding: 15px 39px 12px;
   }
 }
+
 .button:hover {
   background: $greenhover;
 }
+
 .button:focus {
   background: $greenhover;
   color: $whitefocus;
 }
+
 .title__h2 {
   margin-top: 0;
+
   @media (max-width: $mobile-width) {
     font-size: 36px;
     line-height: 40px;
     margin-bottom: 33px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 72px;
   }
 }
+
 .title {
   @media (max-width: $mobile-width) {
     font-size: 24px;
     line-height: 25px;
     padding: 0 15px 0 20px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;

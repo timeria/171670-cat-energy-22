@@ -1,24 +1,29 @@
-.form-radio{
+.form-radio {
   margin-bottom: 25px;
 }
+
 .form-radio:last-child {
   margin-bottom: 0;
 }
+
 .form-radio__label {
   position: relative;
   text-transform: uppercase;
   color: $greydisabled;
+
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 18px;
     padding-left: 45px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-left: 60px;
   }
 }
+
 .form-radio__label::before {
   @include beforeAfter;
   border-radius: 50%;
@@ -27,27 +32,32 @@
   top: -2px;
   left: 0;
   border: 1px solid $borderradio;
+
   @media (max-width: $mobile-width) {
     width: 30px;
     height: 30px;
   }
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
   }
 }
+
 .form-radio__label::after {
   @include beforeAfter;
   border-radius: 50%;
   background: $green;
   margin: auto;
   opacity: 0;
+
   @media (max-width: $mobile-width) {
     width: 13.5px;
     height: 13.5px;
     top: 6px;
     left: 8px;
   }
+
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
@@ -55,9 +65,11 @@
     left: 11px;
   }
 }
+
 .form-radio__input:checked + .form-radio__label::after {
   opacity: 1;
 }
+
 .form-radio__input:disabled + .form-radio__label {
-  opacity: .3;
+  opacity: 0.3;
 }

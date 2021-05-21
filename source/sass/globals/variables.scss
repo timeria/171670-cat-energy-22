@@ -2,24 +2,26 @@
 
 $black: #000000;
 $white: #ffffff;
-$whitefocus: rgba(255,255,255,.3);
-$green: #68B738;
-$lightgreen:  rgba(104, 183, 56, 0.85);
-$greenhover: #5EAA2F;
-$darkgrey: #DCDCDC;
-$lightgrey: #F2F2F2;
-$grey: #EAEAEA;
-$greyline: #D9D9D9;
-$bordercolor: #E7E7E7;
+$whitefocus: rgba(255, 255, 255, 0.3);
+$green: #68b738;
+$lightgreen: rgba(104, 183, 56, 0.85);
+$greenhover: #5eaa2f;
+$darkgrey: #dcdcdc;
+$lightgrey: #f2f2f2;
+$grey: #eaeaea;
+$greyline: #d9d9d9;
+$bordercolor: #e7e7e7;
 $lightblack: #444444;
-$bordererror: #FF8282;
+$bordererror: #ff8282;
 $greydisabled: #222222;
 $blacktitle: #111111;
-$borderradio: #CDCDCD;
-$catborder: #EBEBEB;
-$menuborder: #E6E6E6;
-$greyfocus: rgba(68, 68, 68, .3);
-$fillsvg:  #666666;
+$borderradio: #cdcdcd;
+$catborder: #ebebeb;
+$menuborder: #e6e6e6;
+$greyfocus: rgba(68, 68, 68, 0.3);
+$fillsvg: #666666;
+$slidestroke: rgba(0, 0, 0, 0.24);
+$dropshadow: rgba(0, 0, 0, 0.2);
 // Viewports
 
 $tablet-width: 768px;
@@ -27,7 +29,7 @@ $desktop-width: 1440px;
 $mobile-width: 767px;
 
 @mixin beforeAfter {
-    content: "";
-    display: block;
-    position: absolute;
+  content: "";
+  display: block;
+  position: absolute;
 }

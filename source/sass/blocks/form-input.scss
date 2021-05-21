@@ -1,57 +1,70 @@
-.form-input__label{
+.form-input__label {
   margin-right: 12px;
   color: $lightblack;
   white-space: nowrap;
   text-transform: uppercase;
+
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 18px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-right: 24px;
   }
 }
+
 .form-input__field {
   border: 1px solid $bordercolor;
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
+
   @media (max-width: $mobile-width) {
     height: 45px;
     padding-left: 15px;
     font-size: 16px;
   }
+
   @media (min-width: $tablet-width) {
     height: 52px;
     padding-left: 18px;
     font-size: 20px;
   }
 }
+
 .form-input__field:focus {
   border-color: $lightblack;
 }
+
 .form-input__field:focus + .form-input__img {
   stroke: $green;
 }
+
 .form-error .form-input__field {
   border-color: $bordererror;
 }
+
 .form-input {
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
   position: relative;
+
   @media (max-width: $mobile-width) {
     margin-bottom: 14px;
   }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
 }
+
 .form-input:last-child {
   margin-bottom: 0;
 }
+
 .form-input__img {
   position: absolute;
   right: 20px;
@@ -59,9 +72,11 @@
   transform: translateY(-50%);
   stroke: $greydisabled;
 }
+
 .form-input__img--phone {
   right: 12px;
 }
+
 @media (min-width: $desktop-width) {
   .form__list--contact .form-input {
     margin-bottom: 0;

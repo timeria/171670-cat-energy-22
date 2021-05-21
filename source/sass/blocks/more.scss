@@ -1,17 +1,26 @@
 .more {
   text-align: center;
 }
-.more__button  {
+
+.more__button {
   width: 100%;
+  background: $lightgrey;
+  color: $lightblack;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 20px 12px;
 }
+
 .more__description {
   text-transform: uppercase;
   color: $blacktitle;
   margin: 0 0 23px;
+
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 20px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
@@ -19,14 +28,17 @@
     margin: 0 auto;
   }
 }
+
 .more__text {
   color: $lightblack;
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
+
   @media (max-width: $mobile-width) {
     font-size: 12px;
     line-height: 16px;
     margin: 0 0 20px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
@@ -34,26 +46,23 @@
     max-width: 167px;
   }
 }
+
 .more__img {
   @media (max-width: $mobile-width) {
     margin-bottom: 23px;
   }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
     width: 60px;
     height: 60px;
   }
 }
-.more__button {
-  background: $lightgrey;
-  color: $lightblack;
-  font-size: 16px;
-  line-height: 16px;
-  padding: 12px 20px 12px;
-}
+
 .more__button:hover {
   background: $catborder;
 }
+
 .more__button:focus {
   background: $catborder;
   color: $greyfocus;

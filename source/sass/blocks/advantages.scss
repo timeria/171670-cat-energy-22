@@ -1,6 +1,6 @@
 .advantages {
   @media (max-width: $mobile-width) {
-    padding-bottom: 45px;
+    padding-bottom: 42px;
   }
 }
 
@@ -30,9 +30,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 104px;
-    width: 35%;
+    margin-bottom: 133px;
+    width: 46%;
     position: relative;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -69,7 +73,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 90%;
+    width: 80%;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,8 +107,13 @@
 }
 
 .advantages__title {
+  @media (max-width: $mobile-width) {
+    margin-top: 26px;
+    margin-bottom: 37px;
+  }
+
   @media (min-width: $tablet-width) {
-    margin-top: 43px;
+    margin-top: 45px;
   }
 
   @media (min-width: $desktop-width) {

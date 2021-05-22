@@ -21,8 +21,12 @@
   padding: 0;
   list-style: none;
 
+  @media (max-width: $mobile-width) {
+    margin-bottom: 38px;
+  }
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +47,7 @@
 
 .additional__gift {
   @media (max-width: $mobile-width) {
-    height: 286px;
+    height: 288px;
   }
 
   @media (min-width: $desktop-width) {

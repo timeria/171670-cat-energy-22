@@ -9,11 +9,11 @@
   @media (min-width: $tablet-width) {
     color: $black;
     text-align: left;
-    padding: 0 30px 529px 30px;
+    padding: 0 30px 527px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 0 267px 101px;
+    padding: 40px 0 270px 101px;
   }
 }
 
@@ -40,10 +40,11 @@
 }
 
 .banner__title {
-  margin: 0 0 25px;
+  margin: 0 0 23px;
   font-size: 36px;
   line-height: 36px;
   position: relative;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -61,21 +62,25 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin: 0 0 50px 87px;
+    margin: 0 0 45px 87px;
   }
 }
 
 .banner__button {
-  padding: 10px 0;
+  padding: 12px 0;
   min-width: 280px;
-  margin-top: 2px;
+  margin-top: 4px;
 
   @media (min-width: $tablet-width) {
     padding: 17px 26px;
     min-width: auto;
     z-index: 2;
     position: relative;
-    margin-left: 87px;
+    margin-left: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 89px;
   }
 }
 
@@ -89,6 +94,7 @@
     width: 100%;
     max-width: 709px;
     bottom: 0;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,14 +122,14 @@
   .banner::before {
     width: 720px;
     height: 694px;
-    top: -223px;
+    top: -184px;
     z-index: -1;
   }
 
   .banner::after {
     width: 720px;
     height: 694px;
-    top: -223px;
+    top: -185px;
     z-index: -2;
     background: url("../img/cat-desctop.jpg") no-repeat;
   }

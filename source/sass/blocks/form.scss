@@ -1,6 +1,10 @@
 .form {
   @media (min-width: $tablet-width) {
-    padding-bottom: 82px;
+    padding-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 83px;
   }
 }
 
@@ -8,7 +12,7 @@
   text-transform: uppercase;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     padding: 0 20px;
     font-size: 14px;
     line-height: 18px;
@@ -50,13 +54,17 @@
   @media (max-width: $mobile-width) {
     font-size: 14px;
     line-height: 16px;
-    margin-top: 20px;
+    margin-top: 23px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 84px;
+    margin-left: 62px;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 83px;
   }
 }
 
@@ -125,7 +133,7 @@
   }
 
   .form__button {
-    padding: 17px 39px 15px;
+    padding: 17px 64px 15px;
   }
 }
 
@@ -138,11 +146,11 @@
 
   @media (max-width: $mobile-width) {
     padding: 35px 0 25px 0;
-    margin: 25px 0;
+    margin: 27px 0;
   }
 
   @media (min-width: $tablet-width) {
-    margin: 65px 0 0;
+    margin: 77px 0 0;
     padding: 30px 30px 25px 30px;
   }
 
@@ -156,6 +164,41 @@
 @media (max-width: $mobile-width) {
   .form__group--contacts .form__title {
     max-width: 217px;
+  }
+
+  .form__group--contacts {
+    margin-bottom: 0;
+  }
+
+  .form__group--message {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 37px;
+  }
+
+  .form__group--more {
+    margin-top: 0;
+    padding-top: 37px;
+    margin-bottom: 13px;
+  }
+
+  .form__button {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__group--message {
+    margin-top: 40px;
+  }
+
+  .form__group--more {
+    margin-top: 37px;
+    padding-bottom: 7px;
+  }
+
+  .form__group--more .form__title {
+    margin-bottom: 32px;
   }
 }
 
@@ -173,7 +216,7 @@
 
 .form__list--target {
   @media (min-width: $tablet-width) {
-    padding: 25px 27px;
+    padding: 25px 27px 30px;
     border: 1px solid $bordercolor;
   }
 }
@@ -204,6 +247,7 @@
 
   .form__bottom.container {
     padding: 0 110px;
+    margin-top: 35px;
   }
 
   .form__button {
@@ -216,5 +260,14 @@
 
   .form__list--more {
     margin-top: -15px;
+  }
+
+  .form__group--message,
+  .form__group--more {
+    margin-top: 0;
+  }
+
+  .form__group--more .form__title {
+    margin-bottom: 47px;
   }
 }

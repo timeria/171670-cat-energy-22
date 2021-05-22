@@ -1,12 +1,14 @@
 .form-checkbox {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    width: 48%;
+    width: 45%;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     width: 20%;
+    margin-bottom: 24px;
   }
 }
 
@@ -36,7 +38,7 @@
   @include beforeAfter;
   display: block;
   position: absolute;
-  top: -2px;
+  top: -7px;
   left: 0;
   border: 1px solid $borderradio;
 

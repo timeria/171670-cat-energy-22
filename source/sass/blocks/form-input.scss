@@ -19,7 +19,7 @@
 .form-input__field {
   border: 1px solid $bordercolor;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
 
   @media (max-width: $mobile-width) {
     height: 45px;

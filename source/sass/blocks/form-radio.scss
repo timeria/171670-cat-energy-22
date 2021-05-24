@@ -73,3 +73,7 @@
 .form-radio__input:disabled + .form-radio__label {
   opacity: 0.3;
 }
+
+.form-radio__input:focus + .form-radio__label::before {
+  border-color: $lightblack;
+}

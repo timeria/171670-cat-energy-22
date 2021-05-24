@@ -156,6 +156,11 @@
   .main-catalog__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .main-catalog__item:nth-child(n+3) {
+    margin-top: 20px;
   }
 }
 

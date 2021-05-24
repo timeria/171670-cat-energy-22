@@ -78,6 +78,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
+    margin-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,11 +111,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 32px;
   }
 
   .form__bottom {
     display: flex;
     align-items: center;
+  }
+
+  .form__list--target {
+    margin-top: 0;
   }
 }
 
@@ -138,11 +144,8 @@
 }
 
 .form__group {
-  border-right: 0;
-  border-left: 0;
-  border-width: 2px;
-  border-color: $green;
-  border-bottom: 0;
+  border: 0;
+  position: relative;
 
   @media (max-width: $mobile-width) {
     padding: 35px 0 25px 0;
@@ -161,6 +164,33 @@
   }
 }
 
+.form__group:after {
+  width: 100vw;
+  height: 2px;
+  content: "";
+  background: $green;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  @media (max-width: $mobile-width) {
+    left: 20px;
+    top:-10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15px;
+  }
+}
+
+.form__group--contacts::after {
+  @media (max-width: $mobile-width) {
+    top:-35px;
+  }
+}
 @media (max-width: $mobile-width) {
   .form__group--contacts .form__title {
     max-width: 217px;
@@ -187,6 +217,9 @@
   }
 }
 
+.form__title {
+  background: $white;
+}
 @media (min-width: $tablet-width) {
   .form__group--message {
     margin-top: 40px;
@@ -195,10 +228,6 @@
   .form__group--more {
     margin-top: 37px;
     padding-bottom: 7px;
-  }
-
-  .form__group--more .form__title {
-    margin-bottom: 32px;
   }
 }
 
@@ -239,6 +268,7 @@
   .form__list--contact {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .form__list--contact .form-input {
@@ -267,7 +297,7 @@
     margin-top: 0;
   }
 
-  .form__group--more .form__title {
-    margin-bottom: 47px;
+  .form__list--more {
+    margin-top: 47px;
   }
 }

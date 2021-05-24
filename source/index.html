@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -22,7 +25,7 @@
       <a class="page-header__logo page-header__logo--text">
         <img src="img/logo-text.svg" width="101" height="18" alt="CAT ENERGY">
       </a>
-      <button class="page-header__toggle page-header__toggle--active" type="button"><span class="page-header__toggle-line">Открыть меню</span></button>
+      <button class="page-header__toggle" type="button"><span class="page-header__toggle-line">Открыть меню</span></button>
     </div>
     <nav class="main-nav main-nav--active">
       <ul class="main-nav__list site-list">
@@ -46,18 +49,20 @@
   </header>
   <main class="page-main">
     <section class="banner">
-      <div class="banner__text">
-        <h1 class="banner__title">Функциональное<br> питание для котов</h1>
-        <p class="banner__description">Занялся собой? Займись котом!</p>
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can.webp 1x, img/index-can@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/index-can.png 1x, img/index-can@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
-          <img src="img/index-can-mobile.png" alt="Функциональное питание для котов" width="280" height="270" srcset="img/index-can-mobile@2x.png 2x">
-        </picture>
-        <a href="form.html" class="button banner__button">подобрать программу</a>
+      <div class="banner__container">
+        <div class="banner__text">
+          <h1 class="banner__title">Функциональное<br> питание для котов</h1>
+          <p class="banner__description">Занялся собой? Займись котом!</p>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can.webp 1x, img/index-can@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/index-can.png 1x, img/index-can@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+            <img src="img/index-can-mobile.png" alt="Функциональное питание для котов" width="280" height="270" srcset="img/index-can-mobile@2x.png 2x">
+          </picture>
+          <a href="form.html" class="button banner__button">подобрать программу</a>
+        </div>
       </div>
     </section>
     <section class="main-catalog">
@@ -110,13 +115,14 @@
         </li>
         <li class="advantages__item">
           <div class="advantages__item__img advantages__item__img--clock"></div>
-          <p class="advantages__item__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
+          <p class="advantages__item__description">Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!</p>
           <span class="advantages__item__num">4</span>
         </li>
       </ul>
     </section>
     <section class="example">
-        <div class="example__info container">
+      <div class="example__box container">
+        <div class="example__info">
           <h2 class="title-middle example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           <div class="example__wrap">
@@ -138,32 +144,35 @@
             <li class="slider__item example__before slider__item--active">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
-                <img src="img/before-mobile.png" alt="было" width="311" height="232" srcset="img/before-mobile@2x.png 2x">
-              </picture>
-            </li>
-            <li class="slider__item example__after">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-desktop.webp 1x, img/after-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
-                <img src="img/after-mobile.png" alt="было" width="251" height="240" srcset="img/after-mobile@2x.png 2x">
-              </picture>
-            </li>
-          </ul>
-          <div class="slider__toggles example__toggles">
-            <button type="button" class="slider__button slider__button--before slider__button--active">было</button>
-            <div class="slider__scale">
-              <button class="slider__toggle">
-                <span class="visually-hidden">Переключить слайдер</span>
-              </button>
-            </div>
-            <button type="button" class="slider__button slider__button--after">Стало</button>
-          </div>
-        </div>
-    </section>
-  </main>
+                  <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+                        <img src="img/before-mobile.png" alt="было" width="311" height="232" srcset="img/before-mobile@2x.png 2x">
+                      </picture>
+                    </li>
+                    <li class="slider__item example__after">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/after-desktop.webp 1x, img/after-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
+                          <source media="(min-width: 1440px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
+                            <img src="img/after-mobile.png" alt="было" width="251" height="240" srcset="img/after-mobile@2x.png 2x">
+                          </picture>
+                        </li>
+                      </ul>
+                      <div class="slider__toggles example__toggles">
+                        <button type="button" class="slider__button slider__button--before slider__button--active">было</button>
+                        <div class="slider__scale">
+                          <button class="slider__toggle">
+                            <span class="visually-hidden">Переключить слайдер</span>
+                          </button>
+                        </div>
+                        <button type="button" class="slider__button slider__button--after">Стало</button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__container">

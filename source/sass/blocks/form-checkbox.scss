@@ -70,7 +70,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 11px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 11px;
   }
 }
@@ -81,4 +82,8 @@
 
 .form-checkbox__input:disabled + .form-checkbox__label {
   opacity: 0.3;
+}
+
+.form-checkbox__input:focus + .form-checkbox__label::before {
+  border-color: $lightblack;
 }

@@ -9,6 +9,10 @@
   }
 }
 
+.copyright__img {
+  fill: $fillsvg;
+}
+
 .copyright__link:hover .copyright__img {
   fill: $green;
 }

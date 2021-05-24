@@ -1,8 +1,8 @@
 .additional {
   margin-top: 25px;
   padding: 0;
-  border: initial;
-  border-top: 2px solid $green;
+  border: none;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 68px 0 76px;
@@ -10,9 +10,31 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 75px auto 82px;
+    margin: 78px auto 86px;
     padding: 0 70px;
     max-width: 1440px;
+  }
+}
+
+.additional:after {
+  width: 100vw;
+  height: 2px;
+  content: "";
+  background: $green;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  @media (max-width: $mobile-width) {
+    left: 20px;
+    top:-45px;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -92px;
   }
 }
 
@@ -36,6 +58,8 @@
 }
 
 .additional__title {
+  background: $white;
+
   @media (max-width: $mobile-width) {
     margin-bottom: 35px;
   }

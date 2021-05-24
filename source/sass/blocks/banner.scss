@@ -3,8 +3,6 @@
   color: $white;
   padding: 27px 20px 22px;
   text-align: center;
-  max-width: 1440px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -16,7 +14,10 @@
     padding: 40px 0 270px 101px;
   }
 }
-
+.banner__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .banner::before {
   @include beforeAfter;
   width: 100%;
@@ -120,18 +121,24 @@
   }
 
   .banner::before {
-    width: 720px;
+    width: 50%;
     height: 694px;
     top: -184px;
     z-index: -1;
   }
 
   .banner::after {
-    width: 720px;
+    width: 50%;
     height: 694px;
     top: -185px;
     z-index: -2;
     background: url("../img/cat-desctop.jpg") no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/cat-desktop@2x.jpg") no-repeat;
+      background-size: cover;
+    }
   }
 
   .banner__text {
@@ -139,6 +146,3 @@
   }
 }
 
-@media (min-resolution: 2dppx) {
-  background: url("../img/cat-desctop2x.jpg") no-repeat;
-}

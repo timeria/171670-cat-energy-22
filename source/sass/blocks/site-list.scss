@@ -47,6 +47,12 @@
   @media (min-width: $tablet-width) {
     margin-right: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(n+4) {
+      margin-top: 20px;
+    }
+  }
 }
 
 .site-list__item:last-child {

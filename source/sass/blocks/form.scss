@@ -88,7 +88,7 @@
 
 .form__list--data {
   @media (max-width: $mobile-width) {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $tablet-width) {
@@ -98,6 +98,7 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
     width: 46.5%;
+    margin-top: 0;
   }
 }
 
@@ -128,7 +129,7 @@
   .form__list--target {
     border-top: 1px solid $bordercolor;
     border-bottom: 1px solid $bordercolor;
-    padding: 22px 20px;
+    padding: 28px 20px 23px;
   }
 }
 
@@ -146,6 +147,7 @@
 .form__group {
   border: 0;
   position: relative;
+  overflow-x: hidden;
 
   @media (max-width: $mobile-width) {
     padding: 35px 0 25px 0;
@@ -164,7 +166,7 @@
   }
 }
 
-.form__group:after {
+.form__group::after {
   width: 100vw;
   height: 2px;
   content: "";
@@ -176,7 +178,7 @@
 
   @media (max-width: $mobile-width) {
     left: 20px;
-    top:-10px;
+    top: -11px;
   }
 
   @media (min-width: $tablet-width) {
@@ -188,9 +190,10 @@
 
 .form__group--contacts::after {
   @media (max-width: $mobile-width) {
-    top:-35px;
+    top: -35px;
   }
 }
+
 @media (max-width: $mobile-width) {
   .form__group--contacts .form__title {
     max-width: 217px;
@@ -204,11 +207,12 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 37px;
+    padding-bottom: 22px;
   }
 
   .form__group--more {
     margin-top: 0;
-    padding-top: 37px;
+    padding-top: 38px;
     margin-bottom: 13px;
   }
 
@@ -220,6 +224,7 @@
 .form__title {
   background: $white;
 }
+
 @media (min-width: $tablet-width) {
   .form__group--message {
     margin-top: 40px;
@@ -289,15 +294,14 @@
   }
 
   .form__list--more {
-    margin-top: -15px;
+    margin-top: 30px;
   }
 
-  .form__group--message,
   .form__group--more {
-    margin-top: 0;
+    margin-top: -1px;
   }
 
-  .form__list--more {
-    margin-top: 47px;
+  .form__group--message {
+    margin-top: 0;
   }
 }

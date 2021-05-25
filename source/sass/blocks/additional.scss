@@ -16,7 +16,7 @@
   }
 }
 
-.additional:after {
+.additional::after {
   width: 100vw;
   height: 2px;
   content: "";
@@ -28,13 +28,17 @@
 
   @media (max-width: $mobile-width) {
     left: 20px;
-    top:-45px;
+    top: -45px;
   }
 
   @media (min-width: $tablet-width) {
     left: 50%;
     transform: translateX(-50%);
-    top: -92px;
+    top: -95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -93px;
   }
 }
 
@@ -65,7 +69,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 78px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
   }
 }
 

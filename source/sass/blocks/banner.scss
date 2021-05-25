@@ -14,10 +14,12 @@
     padding: 40px 0 270px 101px;
   }
 }
+
 .banner__container {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .banner::before {
   @include beforeAfter;
   width: 100%;
@@ -145,4 +147,3 @@
     max-width: 555px;
   }
 }
-

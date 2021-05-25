@@ -38,18 +38,19 @@
   @include beforeAfter;
   display: block;
   position: absolute;
-  top: -7px;
   left: 0;
   border: 1px solid $borderradio;
 
   @media (max-width: $mobile-width) {
     width: 30px;
     height: 30px;
+    top: -2px;
   }
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    top: -7px;
   }
 }
 

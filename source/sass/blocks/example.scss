@@ -13,8 +13,9 @@
 
   @media (min-width: $desktop-width) {
     border: 0;
-    padding-bottom: 70px;
+    padding: 124px 0 70px;
     margin-top: 0;
+    overflow: hidden;
   }
 }
 
@@ -189,18 +190,6 @@
     z-index: -1;
     position: absolute;
   }
-
-  .example::before {
-    content: "";
-    width: 30%;
-    height: 462px;
-    background: $grey;
-    right: 0;
-    bottom: 0;
-    display: block;
-    z-index: -1;
-    position: absolute;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -217,6 +206,8 @@
     width: 325px;
     height: 654px;
     margin-top: 7px;
+    position: relative;
+    z-index: 2;
   }
 
   .example__box {
@@ -230,5 +221,18 @@
 
   .example__before {
     margin-right: -40px;
+  }
+
+  .example__after::before {
+    content: "";
+    width: 100%;
+    height: 462px;
+    background: #eaeaea;
+    right: 0;
+    bottom: 7px;
+    display: block;
+    z-index: 0;
+    position: absolute;
+    left: 53%;
   }
 }

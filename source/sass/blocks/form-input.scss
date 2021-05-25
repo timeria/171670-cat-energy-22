@@ -67,11 +67,11 @@
 }
 
 .form-error .form-input__img--mail {
-  stroke: $bordererror;;
+  stroke: $bordererror;
 }
 
 .form-error .form-input__img--phone {
-  fill: $bordererror;;
+  fill: $bordererror;
 }
 
 
@@ -119,6 +119,6 @@
   }
 }
 
-input[type='number'] {
-    -moz-appearance:textfield;
+input[type="number"] {
+  appearance: textfield;
 }

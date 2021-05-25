@@ -25,8 +25,11 @@
       <a href="index.html" class="page-header__logo page-header__logo--text">
         <img src="img/logo-text.svg" width="101" height="18" alt="CAT ENERGY">
       </a>
-      <button class="page-header__toggle" type="button"><span class="page-header__toggle-line">Открыть меню</span></button>
+      <!--Для отображения бургера убрать у кнопки с классом .page-header__toggle класс visually-hidden-->
+      <!--Для отображения крестика добавить кнопке с классом .page-header__toggle класс .page-header__toggle--active-->
+      <button class="page-header__toggle visually-hidden" type="button"><span class="page-header__toggle-line">Открыть меню</span></button>
     </div>
+    <!--Для переключения меню используется класс main-nav--active-->
     <nav class="main-nav main-nav--active main-nav--pages">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -332,6 +335,7 @@
     <div class="page-footer__bottom">
       <div class="page-footer__bottom-wrap container">
         <a href="/" class="page-footer__logo">
+          <span class="visually-hidden">Кэт энерджи</span>
           <svg width="128" height="24" class="page-footer__logo__img">
             <use href="img/sprite.svg#footer-logo"></use>
           </svg>
